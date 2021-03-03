@@ -4,7 +4,7 @@ import hashlib
 from fontTools.ttLib import TTFont
 
 
-font1 = TTFont("1be698a5.woff")
+font1 = TTFont("44c67501.woff")
 uniCode1 = font1['cmap'].tables[1].ttFont.getGlyphOrder()[1::]
 uniMd51 = {}
 # strMd5Dict = {}
