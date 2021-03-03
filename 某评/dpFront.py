@@ -19,9 +19,11 @@ class DpFont(object):
     def __init__(self, fontname):
         """
         fontname动态的字体文件
+        woff动态的字体文件数据，初始值为空
         :param fontname:
         """
         self.fontname = fontname
+        self.woff = ""
         self.is_woff = False
         if self.__get_check_update():
             raise Exception("字体文件有更新，请查看并修改字典映射关系")
